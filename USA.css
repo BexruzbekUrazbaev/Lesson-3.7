@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root{
+    --dark-mode: #202C36;
+    --day-mode: #fff;
+    --night-mode: #2B3844;
+    --sun-mode: rgb(187, 185, 192);
+    --text-uchun: #fff;
+    --aksi: #000;
+}
+
+.sun-theme{
+    --dark-mode: #fff;
+    --day-mode: #202C36;
+    --night-mode: rgb(187, 185, 192);
+    --sun-mode: #2B3844;
+    --text-uchun: #000;
+    --aksi: #fff;
+}
+
+nav {
+    background-color: var(--sun-mode);
+    background-color: var(--night-mode);
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    padding-top: 13px;
+}
+
+.nav_title {
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--aksi);
+    color: var(--text-uchun);
+}
+
+.nav_title:hover{
+    cursor: pointer;
+}
+
+.dark_mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.dark_mode:hover{
+    cursor: pointer;
+}
+
+.dark_mode:active{
+    background-color: var(--night-mode);
+    background-color: var(--sun-mode);  
+}
+
+.dark_mode_title {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--day-mode);
+}
+
+.header {
+    background-color: var(--dark-mode);
+}
+
+.header_wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back {
+    background-color: var(--sun-mode);
+    background-color: var(--night-mode);
+    width: 136px;
+    height: 40px;
+    top: 160px;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.back_text {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--aksi);
+    color: var(--text-uchun);
+}
+
+.card {
+    display: flex;
+}
+
+.germany_flag {
+    width: 560px;
+    height: 401px;
+}
+
+.right {
+    margin-left: 144px;
+}
+
+.card_texts {
+    display: flex;
+    gap: 117px;
+}
+
+.right_title {
+    color: var(--aksi);
+    color: var(--text-uchun);
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.card_text {
+    color: var(--aksi);
+    color: var(--text-uchun);
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+
+.down_title {
+    color: var(--aksi);
+    color: var(--text-uchun);
+    margin-top: 70px;
+}
+
+.boxes{
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    width: 96px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sun-mode);
+    background-color: var(--night-mode);
+    margin-top: 70px;
+    color: var(--aksi);
+    color: var(--text-uchun);
+}
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

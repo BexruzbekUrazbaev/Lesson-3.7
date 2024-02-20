@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root{
+    --dark-mode: #202C36;
+    --day-mode: #fff;
+    --night-mode: #2B3844;
+    --sun-mode: rgb(187, 185, 192);
+    --text-uchun: #fff;
+    --aksi: #000;
+}
+
+.sun-theme{
+    --dark-mode: #fff;
+    --day-mode: #202C36;
+    --night-mode: rgb(187, 185, 192);
+    --sun-mode: #2B3844;
+    --text-uchun: #000;
+    --aksi: #fff;
+}
+
+nav {
+    background-color: var(--sun-mode);
+    background-color: var(--night-mode);
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    padding-top: 13px;
+}
+
+
+.nav_title {
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--day-mode);
+}
+
+.nav_title:hover{
+    cursor: pointer;
+}
+
+.dark_mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.dark_mode:hover{
+    cursor: pointer;
+}
+
+.dark_mode:active{
+    background-color: var(--night-mode);
+    background-color: var(--sun-mode);  
+}
+
+.dark_mode_title {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--day-mode);
+}
+
+.header {
+    background-color: var(--dark-mode);
+}
+
+.header_wrapper {
+    background-color: var(--dark-mode);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.search {
+    width: 480px;
+    height: 56px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--sun-mode);
+    background-color: var(--night-mode);
+    gap: 24px;
+    position: relative;
+}
+
+.search img {
+    margin-left: 32px;
+    position: absolute;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--sun-mode);
+    background-color: var(--night-mode);
+    color: var(--aksi);
+    color: var(--text-uchun);
+    
+    border: none;
+    padding-left: 74px;
+}
+
+input:active {
+    border: none;
+}
+
+section {
+    background-color: var(--dark-mode);
+}
+
+.up {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card {
+    width: 264px;
+    height: 336px;
+    top: 232px;
+    left: 80px;
+    
+    background-color: var(--sun-mode);
+    background-color: var(--night-mode);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.card_img {
+    width: 264px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card_title {
+    color: var(--aksi);
+    color: var(--text-uchun);
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.card_text {
+    color: var(--aksi);
+    color: var(--text-uchun);
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 24px;
+    margin-top: 8px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav_title {
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .dark_mode_title {
+        font-family: Nunito Sans;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .search {
+        width: 343px;
+        height: 48px;
+    }
+
+    .up {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* Media query for screens with a width between 601 and 768 pixels */
+@media screen and (min-width: 601px) and (max-width: 768px) {}
+
+/* Media query for screens with a width between 769 and 1024 pixels */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Media query for screens with a width between 1025 and 1200 pixels */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/* Media query for screens with a minimum width of 1201 pixels */
+@media screen and (min-width: 1201px) {}

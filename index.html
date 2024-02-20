@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.7</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav_wrapper">
+                    <a href="/index.html"><h1 class="nav_title">Where in the world?</h1></a>
+                    <div class="dark_mode" id="icon">
+                        <img src="/images/Path.png" alt="Moon">
+                        <p class="dark_mode_title">Dark Mode</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header">
+            <div class="container">
+                <div class="header_wrapper">
+                    <div class="search">
+                        <img src="/images/icon-search-white.svg" alt="search icon">
+                        <input type="text" placeholder=" Search for a country…">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="section_wrapper">
+                <div class="up">
+                    <div class="card" id="Germany">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg.png" alt="germany flag">
+                        <a href="/Germany.html"><h1 class="card_title">Germany</h1></a>
+                        <p class="card_text"><b>Population:</b> 81,770,900</p>
+                        <p class="card_text"><b>Region:</b> Europe</p>
+                        <p class="card_text"><b>Capital:</b> Berlin</p>
+                    </div>
+
+                    <div class="card" id="USA">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg (1).png" alt="USA flag">
+                        <a href="/USA.html">
+                            <h1 class="card_title">United States of America</h1>
+                        </a>
+                        <p class="card_text"><b>Population:</b> 323,947,000</p>
+                        <p class="card_text"><b>Region:</b> Americas</p>
+                        <p class="card_text"><b>Capital:</b> Washington, D.C.</p>
+                    </div>
+
+                    <div class="card" id="Brazil">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg (2).png" alt="Brazil flag">
+                        <a href="/Brazil.html"><h1 class="card_title">Brazil</h1></a>
+                        <p class="card_text"><b>Population:</b> 206,135,893</p>
+                        <p class="card_text"><b>Region:</b> Americas</p>
+                        <p class="card_text"><b>Capital:</b> Brasília</p>
+                    </div>
+
+                    <div class="card" id="Iceland">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg (3).png" alt="Iceland flag">
+                        <a href="/Iceland.html"><h1 class="card_title">Iceland</h1></a>
+                        <p class="card_text"><b>Population:</b> 334,300</p>
+                        <p class="card_text"><b>Region:</b> Europe</p>
+                        <p class="card_text"><b>Capital:</b> Reykjavík</p>
+                    </div>
+
+                    <div class="card" id="Afghanistan">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg (4).png" alt="Afghanistan flag">
+                        <a href="/Afghanistan.html"><h1 class="card_title">Afghanistan</h1></a>
+                        <p class="card_text"><b>Population:</b> 27,657,145</p>
+                        <p class="card_text"><b>Region:</b> Asia</p>
+                        <p class="card_text"><b>Capital:</b> Kabul</p>
+                    </div>
+
+                    <div class="card" id="Åland Islands">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg (5).png" alt="Åland Islands flag">
+                        <a href="/Aland.html"><h1 class="card_title">Åland Islands</h1></a>
+                        <p class="card_text"><b>Population:</b> 28,875</p>
+                        <p class="card_text"><b>Region:</b> Europe</p>
+                        <p class="card_text"><b>Capital:</b> Mariehamn</p>
+                    </div>
+
+                    <div class="card" id="Albania">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg (6).png" alt="Albania flag">
+                        <a href="/Albania.html"><h1 class="card_title">Albania</h1></a>
+                        <p class="card_text"><b>Population:</b> 2,886,026</p>
+                        <p class="card_text"><b>Region:</b> Europe</p>
+                        <p class="card_text"><b>Capital:</b> Tirana</p>
+                    </div>
+
+                    <div class="card" id="Algeria">
+                        <img class="card_img" src="/images/1280px-Flag_of_Germany.svg (7).png" alt="Algeria flag">
+                        <a href="/Albania.html"><h1 class="card_title">Algeria</h1></a>
+                        <p class="card_text"><b>Population:</b> 40,400,000</p>
+                        <p class="card_text"><b>Region:</b> Africa</p>
+                        <p class="card_text"><b>Capital:</b> Algiers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var icon = document.getElementById('icon');
+        icon.onclick = function () {
+            document.body.classList.toggle('sun-theme')
+        }
+    </script>
+</body>
+
+</html>

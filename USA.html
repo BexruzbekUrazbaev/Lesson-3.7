@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="USA.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav_wrapper">
+                    <h1 class="nav_title">Where in the world?</h1>
+                    <div class="dark_mode" id="icon">
+                        <img src="/images/Path.png" alt="Moon">
+                        <p class="dark_mode_title">Dark Mode</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header">
+            <div class="container">
+                <div class="header_wrapper">
+                    <a href="/index.html">
+                        <div class="back">
+                            <img src="/images/Shape.png" alt="left arrow">
+                            <p class="back_text">Back</p>
+                        </div>
+                    </a>
+                    <div class="card">
+                        <img class="germany_flag" src="/images/1280px-Flag_of_Germany.svg (1).png" alt="Germany flag">
+                        <div class="right">
+                            <h1 class="right_title">USA</h1>
+                            <div class="card_texts">
+                                <div class="left_texts">
+                                    <p class="card_text"><b>Native Name:</b> United States of America<br>
+                                        <b>Population:</b> 323,947,000 <br>
+                                        <b>Region:</b> Americas <br>
+                                        <b>Sub Region:</b> North Americas<br>
+                                        <b>Capital:</b> Washington, D.C.
+                                    </p>
+                                </div>
+                                <div class="rigth_texts">
+                                    <p class="card_text">
+                                        <b>Top Level Domain:</b> .be <br>
+                                        <b>Currencies:</b> Dollar <br>
+                                        <b>Languages:</b> English<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <p class="down_title"><b>Border Countries:</b></p>
+                                <div class="boxes">
+                                    <div class="box">Canada</div>
+                                    <div class="box">Mexico</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        var icon = document.getElementById('icon');
+        icon.onclick = function () {
+            document.body.classList.toggle('sun-theme')
+        }
+    </script>
+</body>
+
+</html>
